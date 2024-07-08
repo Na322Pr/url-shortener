@@ -1,0 +1,9 @@
+env: local # local/dev/prod
+
+http: 
+  address: "localhost:8080"
+  timeout: "4s"
+  idle_timeout: "60s"
+
+postgres:
+  url: "postgresql://goserver:goserver@localhost:5432/url_shortener_db"
