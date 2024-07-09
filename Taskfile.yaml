@@ -1,24 +1,7 @@
 version: "3"
 
 tasks:
-
-  app_migrations:
-    aliases: 
-      - gen
-    desc: "Something funny idk"
-    cmds: 
-      - 
-
-  tast_migrations:
-    aliases: 
-      - gen
-    desc: "Something funny idk"
-    cmds: 
-      - 
-
   run_app: 
-    aliases: 
-      - gen
-    desc: "Something funny idk"
+    desc: "Launching the application"
     cmds: 
-      - go run cmd/url-shortener/main.go --config=./config/config.yaml
+      - go run cmd/url-shortener/main.go --config=./config/local.yaml
