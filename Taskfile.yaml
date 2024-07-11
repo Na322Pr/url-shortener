@@ -1,6 +1,11 @@
 version: "3"
 
 tasks:
+  app_migrations_up:
+    desc: "Migrations up"
+    cmds: 
+      - go run cmd/migrator/main.go --storage-url="goserver:goserver@localhost:5432/url_shortener_db" --migrations-path=./migrations
+
   run_app: 
     desc: "Launching the application"
     cmds: 
